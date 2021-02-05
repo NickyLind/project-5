@@ -38,15 +38,20 @@ describe('Earth Years Conversion',  ()  =>  {
     expect(earthAge.jupiterAge()).toEqual(2.5)
   })
 
-  test('should determine whether users sex is female and outputs life expectency for each planet',  ()  =>  {
+  test('should determine whether users sex is female and outputs age for each planet',  ()  =>  {
     const earthGender = new EarthYears(30, "female")
     expect(earthGender.lifeExpectency()).toEqual([337.5, 130.6, 43.1, 6.8])
   })
 
-  test('should determine whether users sex is male to determine life expectency',  ()  =>  {
+  test('should determine whether users sex is male and outputs age for each planet',  ()  =>  {
     const earthGender = new EarthYears(30, "male")
     expect(earthGender.lifeExpectency()).toEqual([320.8, 124.2, 41, 6.5])
   })
+
+  // test('should determine whether a users life expectency has surpassed the average life expectency',  ()  =>  {
+  //   const expectedAge = new EarthYears(90, "female") 
+  //   expect(expectedAge.lifeExpectency()).toEqual()
+  // })
 })
 // "337.5, 130.6, 43.1, 6.8"
 // 320.8, 124.2, 41, 6.5
