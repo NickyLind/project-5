@@ -22,8 +22,8 @@ export default class EarthYears {
   marsAge() {
     return parseFloat((this.age / 1.88).toFixed(1))
   }
-  
-  jupiterAge()  {
 
+  jupiterAge()  {
+    return parseFloat((this.age / 11.86).toFixed(1))
   }
 };
