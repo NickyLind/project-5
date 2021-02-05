@@ -20,6 +20,6 @@ export default class EarthYears {
   }
 
   marsAge() {
-    
+    return Math.round(this.age / 1.88)
   }
 };
