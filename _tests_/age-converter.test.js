@@ -1,7 +1,7 @@
 import { TestScheduler } from 'jest';
 import EarthYears from '../src/js/age-converter.js';
 
-describe('Earth Years',  ()  =>  {
+describe('Earth Years Conversion',  ()  =>  {
 
   test('should correctly create an EarthYears object with an age',  ()  =>  {
     const earthAge = new EarthYears(30)
@@ -33,8 +33,13 @@ describe('Earth Years',  ()  =>  {
   expect(earthAge.marsAge()).toEqual(16)
   })
 
-  test('should conver age in Earth years to age in years on Jupiter', ()  =>  {
+  test('should convert age in Earth years to age in years on Jupiter', ()  =>  {
     const earthAge = new EarthYears(30)
     expect(earthAge.jupiterAge()).toEqual(2.5)
+  })
+
+  test('should determine whether users sex is female to determine life expectency',  ()  =>  {
+    const earthGender = new EarthYears(30, "female")
+    expect(earthGender.lifeExpectency()).toEqual(true)
   })
 })

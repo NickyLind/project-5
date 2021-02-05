@@ -1,6 +1,7 @@
 export default class EarthYears {
-  constructor(age)  {
+  constructor(age, sex)  {
     this.age = age;
+    this.sex = sex;
   }
   
   checkAge()  {
@@ -25,5 +26,13 @@ export default class EarthYears {
 
   jupiterAge()  {
     return parseFloat((this.age / 11.86).toFixed(1))
+  }
+
+  lifeExpectency()  {
+    // if (this.sex = "Female")  {
+    //   return true
+    // } else  {
+    //   return false
+    // }
   }
 };
