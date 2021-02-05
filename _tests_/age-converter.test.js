@@ -18,13 +18,18 @@ describe('Earth Years',  ()  =>  {
     expect(earthAge.checkAge()).toEqual(false);
   })
 
-  test('should convert age in earth years to age in years on mercury',  ()  =>  {
+  test('should convert age in Earth years to age in years on Mercury',  ()  =>  {
     const earthAge = new EarthYears(30)
     expect(earthAge.mercuryAge()).toEqual(125)
   })
 
-  test('should convert age in earth years to age in years on venus',  ()  =>  {
+  test('should convert age in Earth years to age in years on Venus',  ()  =>  {
     const earthAge = new EarthYears(30)
     expect(earthAge.venusAge()).toEqual(48)
+  })
+
+  test('should convert age in Earth years to age in years on Mars', ()  =>  {
+  const earthAge = new EarthYears(30)
+  expect(earthAge.marsAge()).toEqual(16)
   })
 })

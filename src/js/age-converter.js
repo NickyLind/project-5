@@ -18,4 +18,8 @@ export default class EarthYears {
   venusAge()  {
     return Math.round(this.age / 0.62)
   }
+
+  marsAge() {
+    
+  }
 };
