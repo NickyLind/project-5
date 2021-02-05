@@ -32,13 +32,14 @@ export default class EarthYears {
     if (this.sex === "female")  {
       let newAge = 81
       let expectencyArray = []
-      expectencyArray.push(parseFloat((newAge / 0.24).toFixed(1)), (newAge / 0.62).toFixed(1), (newAge / 1.88).toFixed(1), (newAge / 11.86).toFixed(1))
-      return parseFloat(expectencyArray.join(", "));
+      expectencyArray.push((newAge / 0.24).toFixed(1), (newAge / 0.62).toFixed(1), (newAge / 1.88).toFixed(1), (newAge / 11.86).toFixed(1))
+      console.log(expectencyArray.join(", "))
+      return expectencyArray.join(", ");
     } else  {
       let newAge = 77
       let expectencyArray = []
       expectencyArray.push(parseFloat((newAge / 0.24).toFixed(1)), (newAge / 0.62).toFixed(1), (newAge / 1.88).toFixed(1), (newAge / 11.86).toFixed(1))
-      return parseFloat(expectencyArray.join(", "));
+      return expectencyArray.join(", ");
     }
   }
 };
