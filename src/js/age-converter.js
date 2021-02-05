@@ -31,7 +31,9 @@ export default class EarthYears {
   lifeExpectency()  {
     if (this.sex === "female")  {
       let newAge = 81
-      return parseFloat((newAge / 0.24).toFixed(1))
+      let expectencyArray = []
+      expectencyArray.push(parseFloat((newAge / 0.24).toFixed(1)), (newAge / 0.62).toFixed(1), (newAge / 1.88).toFixed(1), (newAge / 11.86).toFixed(1))
+      return parseFloat(expectencyArray.join(", "));
     } else  {
       let newAge = 77
       return parseFloat((newAge / 0.24).toFixed(1))
