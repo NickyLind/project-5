@@ -40,11 +40,11 @@ describe('Earth Years Conversion',  ()  =>  {
 
   test('should determine whether users sex is female to determine life expectency',  ()  =>  {
     const earthGender = new EarthYears(30, "female")
-    expect(earthGender.lifeExpectency()).toEqual(true)
+    expect(earthGender.lifeExpectency()).toEqual(337.5)
   })
 
-  test('should determine whether users sex is female to determine life expectency',  ()  =>  {
+  test('should determine whether users sex is male to determine life expectency',  ()  =>  {
     const earthGender = new EarthYears(30, "male")
-    expect(earthGender.lifeExpectency()).toEqual(false)
+    expect(earthGender.lifeExpectency()).toEqual(320.8)
   })
 })
