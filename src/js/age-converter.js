@@ -11,6 +11,6 @@ export default class EarthYears {
       }
     }
   mercuryAge()  {
-    
+    return this.age / 0.24
   }
 };
