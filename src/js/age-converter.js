@@ -1,22 +1,22 @@
 export default class EarthYears {
-  constructor(age, sex)  {
+  constructor(age, sex) {
     this.age = age;
     this.sex = sex;
   }
-  
-  checkAge()  {
-    if (typeof this.age == 'number')  {
-      return true
-      } else  {
-        return false
-      }
-    }
 
-  mercuryAge()  {
+  checkAge() {
+    if (typeof this.age == 'number') {
+      return true
+    } else {
+      return false
+    }
+  }
+
+  mercuryAge() {
     return parseFloat((this.age / 0.24).toFixed(1))
   }
 
-  venusAge()  {
+  venusAge() {
     return parseFloat((this.age / 0.62).toFixed(1))
   }
 
@@ -24,31 +24,50 @@ export default class EarthYears {
     return parseFloat((this.age / 1.88).toFixed(1))
   }
 
-  jupiterAge()  {
+  jupiterAge() {
     return parseFloat((this.age / 11.86).toFixed(1))
   }
 
-  lifeExpectency()  {
-    if (this.sex === "female")  {
+  lifeExpectency() {
+    if (this.sex === "female") {
       let newAge = 81
       let expectencyArray = []
       let numberExpectedArray = []
+      let userAgeArray = []
+      let userAgeOverExpect = []
+      userAgeArray.push((this.age / 0.24).toFixed(1), (this.age / 0.62).toFixed(1), (this.age / 1.88).toFixed(1), (this.age / 11.86).toFixed(1))
       expectencyArray.push((newAge / 0.24).toFixed(1), (newAge / 0.62).toFixed(1), (newAge / 1.88).toFixed(1), (newAge / 11.86).toFixed(1))
-      expectencyArray.forEach(function(element) {
+      expectencyArray.forEach(function (element) {
         numberExpectedArray.push(parseFloat(element))
       })
-      return numberExpectedArray ;
+      if (this.age > newAge) {
+        for (let i = 0; i < numberExpectedArray.length; i++) {
+          userAgeOverExpect.push(parseFloat((userAgeArray[i] - numberExpectedArray[i]).toFixed(1)))
+        } return userAgeOverExpect;
+      } else if (this.age < newAge) {
+        return numberExpectedArray;
+      }
+    
     } else {
       let newAge = 77
       let expectencyArray = []
       let numberExpectedArray = []
+      let userAgeArray = []
+      let userAgeOverExpect = []
+      userAgeArray.push((this.age / 0.24).toFixed(1), (this.age / 0.62).toFixed(1), (this.age / 1.88).toFixed(1), (this.age / 11.86).toFixed(1))
       expectencyArray.push((newAge / 0.24).toFixed(1), (newAge / 0.62).toFixed(1), (newAge / 1.88).toFixed(1), (newAge / 11.86).toFixed(1))
-      console.log(expectencyArray)
-      expectencyArray.forEach(function(element) {
+      expectencyArray.forEach(function (element) {
         numberExpectedArray.push(parseFloat(element))
       })
-      console.log(numberExpectedArray)
+      if (this.age > newAge)  {
+        for (let i = 0; i < numberExpectedArray.length; i++) {
+          userAgeOverExpect.push(parseFloat((userAgeArray[i] - numberExpectedArray[i]).toFixed(1)))
+        } console.log(userAgeOverExpect)
+      return userAgeOverExpect;
+    
+      } else {
       return numberExpectedArray;
+      }
     }
   }
-};
+}; 
