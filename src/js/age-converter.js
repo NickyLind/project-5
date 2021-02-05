@@ -29,10 +29,10 @@ export default class EarthYears {
   }
 
   lifeExpectency()  {
-    // if (this.sex = "Female")  {
-    //   return true
-    // } else  {
-    //   return false
-    // }
+    if (this.sex === "female")  {
+      return true
+    } else  {
+      return false
+    }
   }
 };
