@@ -10,7 +10,12 @@ export default class EarthYears {
         return false
       }
     }
+
   mercuryAge()  {
     return this.age / 0.24
+  }
+
+  venusAge()  {
+    
   }
 };

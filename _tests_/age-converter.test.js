@@ -22,4 +22,9 @@ describe('Earth Years',  ()  =>  {
     const earthAge = new EarthYears(30)
     expect(earthAge.mercuryAge()).toEqual(125)
   })
+
+  test('should convert age in earth years to age in years on venus',  ()  =>  {
+    const earthAge = new EarthYears(30)
+    expect(earthAge.venusAge()).toEqual(48)
+  })
 })
