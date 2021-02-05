@@ -12,4 +12,10 @@ describe('EarthYears',  ()  =>  {
     const earthAge = new EarthYears(30)
     expect(earthAge.checkAge()).toEqual(true);
   })
+
+  test('should correctly know if the entered value for age is a number',  ()  =>  {
+    const earthAge = new EarthYears("thirty")
+    expect(earthAge.checkAge()).toEqual(false);
+  })
+
 })

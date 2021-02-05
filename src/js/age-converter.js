@@ -4,10 +4,10 @@ export default class EarthYears {
   }
   
   checkAge()  {
-    // if (this.age = Number.isInteger)  {
-    //   return true
-    //   } else  {
-    //     return false
-    //   }
+    if (typeof this.age == 'number')  {
+      return true
+      } else  {
+        return false
+      }
     }
 };
