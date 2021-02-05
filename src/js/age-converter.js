@@ -35,6 +35,7 @@ export default class EarthYears {
       let numberExpectedArray = []
       let userAgeArray = []
       let userAgeOverExpect = []
+      let userTimeToLive = []
       userAgeArray.push((this.age / 0.24).toFixed(1), (this.age / 0.62).toFixed(1), (this.age / 1.88).toFixed(1), (this.age / 11.86).toFixed(1))
       expectencyArray.push((newAge / 0.24).toFixed(1), (newAge / 0.62).toFixed(1), (newAge / 1.88).toFixed(1), (newAge / 11.86).toFixed(1))
       expectencyArray.forEach(function (element) {
@@ -45,9 +46,12 @@ export default class EarthYears {
           userAgeOverExpect.push(parseFloat((userAgeArray[i] - numberExpectedArray[i]).toFixed(1)))
         } return userAgeOverExpect;
       } else if (this.age < newAge) {
+        for (let i = 0; i < userAgeArray.length; i++) {
+          userTimeToLive.push(parseFloat((numberExpectedArray[i] - userAgeArray[i]).toFixed(1)))
+        } console.log(userTimeToLive)
         return numberExpectedArray;
       }
-    
+
     } else {
       let newAge = 77
       let expectencyArray = []
@@ -59,14 +63,14 @@ export default class EarthYears {
       expectencyArray.forEach(function (element) {
         numberExpectedArray.push(parseFloat(element))
       })
-      if (this.age > newAge)  {
+      if (this.age > newAge) {
         for (let i = 0; i < numberExpectedArray.length; i++) {
           userAgeOverExpect.push(parseFloat((userAgeArray[i] - numberExpectedArray[i]).toFixed(1)))
         } console.log(userAgeOverExpect)
-      return userAgeOverExpect;
-    
+        return userAgeOverExpect;
+
       } else {
-      return numberExpectedArray;
+        return numberExpectedArray;
       }
     }
   }

@@ -57,4 +57,14 @@ describe('Earth Years Conversion',  ()  =>  {
     const expectedAge = new EarthYears(90, "male") 
     expect(expectedAge.lifeExpectency()).toEqual([54.2, 21, 6.9, 1.1])
   })
+
+  test('should determine whether a users life expectency is under average life expectency and display by how much',  ()  =>  {
+    const underDeathAge = new EarthYears(30, "female") 
+    expect(underDeathAge.lifeExpectency()).toEqual([212.5, 82.2, 27.1, 4.3])
+  })
+
+  test('should determine whether a users life expectency is under the average life expectency and display by how much',  ()  =>  {
+    const underDeathAge = new EarthYears(30, "male") 
+    expect(underDeathAge.lifeExpectency()).toEqual([54.2, 21, 6.9, 1.1])
+  })
 })
