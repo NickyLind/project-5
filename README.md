@@ -1,6 +1,6 @@
-# _{Application Name}_
+# _Super Galactice Age Caqlculator_
 
-#### _{Brief description of application}_
+#### _this application will convert earth years into the years of other planets_
 
 #### By _**Nick Lindau**_
 
@@ -17,17 +17,17 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This project will use test driven developement to make a series of tests that correctly convert Earth years into years on Mercury, Venus, Mars, & jupiter and determine the remaining life expectency for a person on each_
 
 ## Setup/Installation Requirements
 
-* _Find the resposiotory at (https://)_
+* _Find the respository at (https://github.com/NickyLind/project-5)_
 * _Select the green 'Code' button above the repository and copy the HHTPS link_
 * _In your terminal, find the directory you want to place the progamming-language-selector directory in_
 * _In your terminal, use the git command $git clone [paste HTTPS here]_
 * _Open in Visual Studio Code or another editor_
 
-_If you are just interested in just viewing the webpage it is available on GitPages, or after you have cloned the repository to your local device you can open it via right-clicking the index.html file._
+
 
 ## Known Bugs
 
