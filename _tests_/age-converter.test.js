@@ -38,15 +38,15 @@ describe('Earth Years Conversion',  ()  =>  {
     expect(earthAge.jupiterAge()).toEqual(2.5)
   })
 
-  test('should determine whether users sex is female and outputs life expectency for female on each planet',  ()  =>  {
-    const earthGender = new EarthYears(30, "female")
-    expect(earthGender.lifeExpectency()).toEqual([337.5, 130.6, 43.1, 6.8])
-  })
+  // test('should determine whether users sex is female and outputs life expectency for female on each planet',  ()  =>  {
+  //   const earthGender = new EarthYears(30, "female")
+  //   expect(earthGender.lifeExpectency()).toEqual([337.5, 130.6, 43.1, 6.8])
+  // })
 
-  test('should determine whether users sex is male and outputs life expectency for male on each planet',  ()  =>  {
-    const earthGender = new EarthYears(30, "male")
-    expect(earthGender.lifeExpectency()).toEqual([320.8, 124.2, 41, 6.5])
-  })
+  // test('should determine whether users sex is male and outputs life expectency for male on each planet',  ()  =>  {
+  //   const earthGender = new EarthYears(30, "male")
+  //   expect(earthGender.lifeExpectency()).toEqual([320.8, 124.2, 41, 6.5])
+  // })
 
   test('should determine whether a users life expectency has surpassed the average life expectency and display by how much',  ()  =>  {
     const expectedAge = new EarthYears(90, "female") 
@@ -58,13 +58,13 @@ describe('Earth Years Conversion',  ()  =>  {
     expect(expectedAge.lifeExpectency()).toEqual([54.2, 21, 6.9, 1.1])
   })
 
-  test('should determine whether a users life expectency is under average life expectency and display by how much',  ()  =>  {
+  test('should determine whether a users life expectency is under the average life expectency and display by how much',  ()  =>  {
     const underDeathAge = new EarthYears(30, "female") 
     expect(underDeathAge.lifeExpectency()).toEqual([212.5, 82.2, 27.1, 4.3])
   })
 
   test('should determine whether a users life expectency is under the average life expectency and display by how much',  ()  =>  {
     const underDeathAge = new EarthYears(30, "male") 
-    expect(underDeathAge.lifeExpectency()).toEqual([54.2, 21, 6.9, 1.1])
+    expect(underDeathAge.lifeExpectency()).toEqual([195.8, 75.8, 25, 4])
   })
 })
