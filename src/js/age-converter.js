@@ -10,4 +10,7 @@ export default class EarthYears {
         return false
       }
     }
+  mercuryAge()  {
+    
+  }
 };

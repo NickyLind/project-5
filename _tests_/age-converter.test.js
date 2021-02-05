@@ -1,7 +1,7 @@
 import { TestScheduler } from 'jest';
-import EarthYears from './../src/js/age-converter.js';
+import EarthYears from '../src/js/age-converter.js';
 
-describe('EarthYears',  ()  =>  {
+describe('Earth Years',  ()  =>  {
 
   test('should correctly create an EarthYears object with an age',  ()  =>  {
     const earthAge = new EarthYears(30)
@@ -18,4 +18,8 @@ describe('EarthYears',  ()  =>  {
     expect(earthAge.checkAge()).toEqual(false);
   })
 
+  test('should convert age in earth years to age in years on mercury',  ()  =>  {
+    const earthAge = new EarthYears(30)
+    expect(earthAge.mercuryAge()).toEqual(125)
+  })
 })
