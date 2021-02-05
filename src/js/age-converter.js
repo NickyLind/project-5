@@ -12,14 +12,18 @@ export default class EarthYears {
     }
 
   mercuryAge()  {
-    return Math.round(this.age / 0.24)
+    return parseFloat((this.age / 0.24).toFixed(1))
   }
 
   venusAge()  {
-    return Math.round(this.age / 0.62)
+    return parseFloat((this.age / 0.62).toFixed(1))
   }
 
   marsAge() {
-    return Math.round(this.age / 1.88)
+    return parseFloat((this.age / 1.88).toFixed(1))
+  }
+  
+  jupiterAge()  {
+
   }
 };

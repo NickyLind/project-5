@@ -25,11 +25,16 @@ describe('Earth Years',  ()  =>  {
 
   test('should convert age in Earth years to age in years on Venus',  ()  =>  {
     const earthAge = new EarthYears(30)
-    expect(earthAge.venusAge()).toEqual(48)
+    expect(earthAge.venusAge()).toEqual(48.4)
   })
 
   test('should convert age in Earth years to age in years on Mars', ()  =>  {
   const earthAge = new EarthYears(30)
   expect(earthAge.marsAge()).toEqual(16)
+  })
+
+  test('should conver age in Earth years to age in years on Jupiter', ()  =>  {
+    const earthAge = new EarthYears(30)
+    expect(earthAge.jupiterAge()).toEqual(2.5)
   })
 })
