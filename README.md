@@ -1,4 +1,4 @@
-# _Super Galactice Age Caqlculator_
+# _Super Galactice Age Calculator_
 
 #### _this application will convert earth years into the years of other planets_
 
