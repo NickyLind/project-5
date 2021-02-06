@@ -1,4 +1,4 @@
-# _Super Galactice Age Calculator_
+# _Super Galactic Age Calculator_
 
 #### _this application will convert earth years into the years of other planets_
 
@@ -14,6 +14,7 @@
 * _Visual Studio Code_
 * _webpack_
 * _jest_
+* _eslint_
 
 ## Description
 
