@@ -33,8 +33,8 @@ _This project will use test driven developement to make a series of tests that c
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _Please feel free to leave feedback!_
+
 
 ## License
 
