@@ -26,7 +26,7 @@ _This project will use test driven developement to make a series of tests that c
 * _Select the green 'Code' button above the repository and copy the HHTPS link_
 * _In your terminal, find the directory you want to place the progamming-language-selector directory in_
 * _In your terminal, use the git command $git clone [paste HTTPS here]_
-* _In the root directory of the cloned project run npm install_
+* _In the root directory of the cloned project run $ npm install_
 * _Open in Visual Studio Code or another editor_
 
 
