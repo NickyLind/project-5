@@ -37,14 +37,14 @@ export default class EarthYears {
       expectencyArray.forEach(function (element) {
         numberExpectedArray.push(parseFloat(element));
       });
-      return numberExpectedArray;
+      return `you have ${numberExpectedArray} life expectency on each planet`;
     } else {
       let newAge = 77;
       expectencyArray.push((newAge / 0.24).toFixed(1), (newAge / 0.62).toFixed(1), (newAge / 1.88).toFixed(1), (newAge / 11.86).toFixed(1));
       expectencyArray.forEach(function (element) {
         numberExpectedArray.push(parseFloat(element));
       });
-      return numberExpectedArray;
+      return `you have ${numberExpectedArray} life expectency on each planet`;
     }
   }
 
