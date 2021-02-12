@@ -1,6 +1,8 @@
 import { TestScheduler } from 'jest';
 import EarthYears from '../src/js/age-converter.js';
 
+let lE = "life expectency"
+
 describe('Earth Years Conversion',  ()  =>  {
 
   test('should correctly create an EarthYears object with an age',  ()  =>  {
@@ -38,32 +40,32 @@ describe('Earth Years Conversion',  ()  =>  {
     expect(earthAge.jupiterAge()).toEqual(2.5)
   })
 
-  test('should determine whether users sex is female and outputs life expectency for female on each planet',  ()  =>  {
+  test(`should determine whether users sex is female and outputs ${lE} for female on each planet`,  ()  =>  {
     const earthGender = new EarthYears(30, "female")
-    expect(earthGender.lifeExpectencyPerPlanet()).toEqual([337.5, 130.6, 43.1, 6.8])
+    expect(earthGender.lifeExpectencyPerPlanet()).toEqual("you have " + [337.5, 130.6, 43.1, 6.8] + " life expectency on each planet")
   })
 
-  test('should determine whether users sex is male and outputs life expectency for male on each planet',  ()  =>  {
+  test(`should determine whether users sex is male and outputs ${lE} for male on each planet`,  ()  =>  {
     const earthGender = new EarthYears(30, "male")
-    expect(earthGender.lifeExpectencyPerPlanet()).toEqual([320.8, 124.2, 41, 6.5])
+    expect(earthGender.lifeExpectencyPerPlanet()).toEqual("you have " + [320.8, 124.2, 41, 6.5] + " life expectency on each planet")
   })
 
-  test('should determine whether a users life expectency has surpassed the average life expectency and display by how much',  ()  =>  {
+  test(`should determine whether a users ${lE} has surpassed the average ${lE} and display by how much`,  ()  =>  {
     const expectedAge = new EarthYears(90, "female") 
     expect(expectedAge.lifeExpectency()).toEqual([37.5, 14.6, 4.8, 0.8])
   })
 
-  test('should determine whether a users life expectency has surpassed the average life expectency and display by how much',  ()  =>  {
+  test(`should determine whether a users ${lE} has surpassed the average ${lE} and display by how much`,  ()  =>  {
     const expectedAge = new EarthYears(90, "male") 
     expect(expectedAge.lifeExpectency()).toEqual([54.2, 21, 6.9, 1.1])
   })
 
-  test('should determine whether a users life expectency is under the average life expectency and display by how much',  ()  =>  {
+  test(`should determine whether a users ${lE} is under the average ${lE} and display by how much`,  ()  =>  {
     const underDeathAge = new EarthYears(30, "female") 
     expect(underDeathAge.lifeExpectency()).toEqual([212.5, 82.2, 27.1, 4.3])
   })
 
-  test('should determine whether a users life expectency is under the average life expectency and display by how much',  ()  =>  {
+  test(`should determine whether a users ${lE} is under the average ${lE} and display by how much`,  ()  =>  {
     const underDeathAge = new EarthYears(30, "male") 
     expect(underDeathAge.lifeExpectency()).toEqual([195.8, 75.8, 25, 4])
   })
